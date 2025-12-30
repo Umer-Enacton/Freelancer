@@ -1,9 +1,7 @@
 import axios from "axios";
-import dotenv from "dotenv";
-dotenv.config();
 
 const api = axios.create({
-  baseURL: process.env.PUBLIC_BACKEND_URL,
+  baseURL: "https://freelancer-backend-eta.vercel.app",
   headers: {
     "Content-Type": "application/json",
   },
